@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+      body {font-family: 'Droid Serif'; font-size: 20px; }
+      h1, h2, h3 {font-family: 'Yanone Kaffeesatz'; font-weight: 400; margin-bottom: 0; }
+      h1 { font-size: 2.5em; }
+      h2 { font-size: 1.8em; }
+      h3 { font-size: 1.4em; }
+      .footnote {position: absolute; bottom: 3em; }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: blue;
+        /*color: blue; rgb(249, 38, 114);*/
+        text-decoration: none;
+      }
+      code {
+        -moz-border-radius: 5px;
+        -web-border-radius: 5px;
+        background: #e7e8e2;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+
+
+<textarea id="source">
+
+class: center, middle
+
+# Shiny New Things 
+
+## Ben Racine
+## 12/4/2013
+
+---
+
+### Agenda
+<hr>
+
+<dl>
+  <dt><strong><h2>[Shiny](http://www.rstudio.com/shiny/)</h2></strong></dt>
+  <dd>Helps R users to turn analyses into interactive web applications.</dd>
+  <dt><strong><h2>[d3](http://d3js.org/)</h2></strong></dt>
+  <dd>A JavaScript library for manipulating documents based on data.</dd>
+  <dt><strong><h2>[Vega](https://github.com/trifacta/vega/wiki)</h2></strong></dt>
+  <dd>Vega is a *visualization grammar*, a declarative format for creating, saving, and sharing visualization designs.</dd>
+  <dt><strong><h2>[Julia](http://julialang.org/)</h2></strong></dt>
+  <dd>Julia aims to pair programmer productivity with CPU efficiency.</dd>
+  <dt><strong><h2>[R plotting tools]()</h2></strong></dt>
+  <dd></dd>
+  <!--
+  <dt><strong><h2>[rCharts](http://rcharts.io/)</h2></strong></dt>
+  <dd>rCharts is an R package to create, customize and publish interactive JavaScript visualizations from R.</dd>
+  -->
+</dl>
+
+---
+
+# [Shiny](http://www.rstudio.com/shiny/)
+<hr>
+
+- No HTML or JavaScript knowledge is necessary.
+- Modern-looking default UI theme based on [Twitter Bootstrap](http://getbootstrap.com/css/).
+- [Reactive programming](http://rstudio.github.io/shiny/tutorial/#reactivity-overview) in the browser.
+- [Showcase](http://www.rstudio.com/shiny/showcase/)
+- [Packaged deployment services](http://rstudio.github.io/shiny/tutorial/#deployment-web)
+
+---
+
+# [d3](http://d3js.org) / [Vega](https://github.com/trifacta/vega/wiki)
+<hr>
+
+- d3
+  - [Classic example](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html?_r=0)
+  - [Discussed two years ago and used widely in CSNW](https://github.com/benracine/d3_cisnet_tutorial)
+  - [d3 CISNET Tutorial](d3_cisnet_tutorial/tutorial_slides/d3_tutorial.pdf)
+  - [d3 "expose"](d3_cisnet_tutorial/wow_slides/d3_wow_session.pdf)
+
+- Vega
+  - [On the relationship with d3](https://github.com/trifacta/vega/wiki/Vega-and-D3)
+
+> Vega provides a higher-level visualization specification language on top of d3. 
+> By design, d3 will maintain an "expressivity advantage" and in many cases will be better suited for novel, highly interactive graphics. 
+> On the other hand, we hope that Vega will be convenient for a wide range of common yet customizable visualizations.
+
+  - [Tutorial](https://github.com/trifacta/vega/wiki/Tutorial)
+  - [Examples](vega/examples/)
+
+---
+
+# [Julia](http://julialang.org/)
+<hr>
+
+- [Performance comparable to Fortran and C](http://julialang.org/benchmarks/)
+- One language for both programmer productivy and CPU efficiency 
+- No CRAN, but admirable [package evolution on Github](http://docs.julialang.org/en/latest/packages/packagelist/) nevertheless
+- [Lisp-like macros](http://docs.julialang.org/en/latest/manual/metaprogramming/)
+- Designed around [Lisp-like multiple dispatch](http://nbviewer.ipython.org/gist/StefanKarpinski/b8fe9dbb36c1427b9f22)
+
+---
+
+# [Julia](http://julialang.org/)
+<hr>
+
+- [Standard Library](http://docs.julialang.org/en/latest/stdlib/)
+- Libraries
+  - [JuliaStats](https://github.com/JuliaStats)
+  - [Functional Collections](https://github.com/zachallaun/FunctionalCollections.jl)
+  - [Functional Utilities](https://github.com/zachallaun/FunctionalUtils.jl)
+  - [Julia package that targets Vega](https://github.com/johnmyleswhite/Vega.jl)
+  - [Plotting options discussed](https://groups.google.com/forum/#!topic/julia-users/4pT81kO1jDE)
+
+---
+
+# [R Plotting Tools]()
+<hr>
+
+- [ggplot2](http://docs.ggplot2.org/current/)
+- [rVega](https://github.com/metagraf/rVega)
+
+---
+
+# Open Floor
+<hr>
+
+- Share your screen
+- Research one of these packages
+- Build something with our remaining time?
+
+</textarea>
+
+    <script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $('a').attr('target', '_blank');
+      });
+    </script>
+  </body>
+</html>
