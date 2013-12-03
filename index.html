@@ -28,20 +28,10 @@
         border-radius: 5px;
         font-size: 16px;
       }
-      .pull-left {
-        float: left;
-        width: 47%;
-      }
-      .pull-right {
-        float: right;
-        width: 47%;
-      }
-      .pull-right ~ p {
-        clear: both;
-      }
-      #slideshow .slide .content code {
-        font-size: 0.8em;
-      }
+      .pull-left {float: left; width: 47%; }
+      .pull-right {float: right; width: 47%; }
+      .pull-right ~ p {clear: both; }
+      #slideshow .slide .content code {font-size: 0.8em; }
       #slideshow .slide .content pre code {
         font-size: 0.9em;
         padding: 15px;
@@ -85,11 +75,7 @@
         left: 20%;
         z-index: 1;
       }
-      #slide-how .slides .second {
-        position: relative;
-        background: #fff;
-        z-index: 0;
-      }
+      #slide-how .slides .second {position: relative; background: #fff; z-index: 0; }
 
       /* Two-column layout */
       .left-column {
@@ -98,15 +84,15 @@
         height: 92%;
         float: left;
       }
-        .left-column h2:last-of-type, .left-column h3:last-child {
-          color: #000;
-        }
-      .right-column {
-        width: 75%;
-        float: right;
-        padding-top: 2em;
-      }
+      .left-column h2:last-of-type, .left-column h3:last-child {color: #000; }
+      .right-column {width: 75%; float: right; padding-top: 2em; }
     </style>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
   <body>
 
@@ -115,10 +101,20 @@
 
 class: center, middle
 
-# Shiny New Things 
+# Programmers Breakout Meeting
+# Some "Shiny" New Things
+
+<br>
 
 ## Ben Racine
-## 12/4/2013
+## December 2013 
+
+<br>
+<br>
+
+#### Slideshow: http://benracine.github.io/pbo-2013
+#### Repo: https://github.com/benracine/pbo-2013
+#### *Presentation made using Remark.js and MathJax
 
 ---
 
@@ -126,32 +122,15 @@ class: center, middle
 <hr>
 
 <dl>
+  <dt><strong><h2>[d3](http://d3js.org/) / [Vega](https://github.com/trifacta/vega/wiki)</h2></strong></dt>
+  <dd>d3 is a JavaScript library for manipulating documents based on data. Vega is a *visualization grammar*; a declarative format for creating, saving, and sharing visualization designs.</dd>
+  <dt><strong><h2>[Julia](http://julialang.org/)</h2></strong></dt>
+  <dd>Julia is an entirely new programming language that aims to pair programmer productivity with CPU efficiency.</dd>
+  <dt><strong><h2>[MathJax](http://www.mathjax.org/)</h2></strong></dt>
+  <dd>Latex in the browser.</dd>
   <dt><strong><h2>[Shiny](http://www.rstudio.com/shiny/)</h2></strong></dt>
   <dd>Helps R users to turn analyses into interactive web applications.</dd>
-  <dt><strong><h2>[d3](http://d3js.org/)</h2></strong></dt>
-  <dd>A JavaScript library for manipulating documents based on data.</dd>
-  <dt><strong><h2>[Vega](https://github.com/trifacta/vega/wiki)</h2></strong></dt>
-  <dd>Vega is a *visualization grammar*, a declarative format for creating, saving, and sharing visualization designs.</dd>
-  <dt><strong><h2>[Julia](http://julialang.org/)</h2></strong></dt>
-  <dd>Julia aims to pair programmer productivity with CPU efficiency.</dd>
-  <dt><strong><h2>[R plotting tools]()</h2></strong></dt>
-  <dd></dd>
-  <!--
-  <dt><strong><h2>[rCharts](http://rcharts.io/)</h2></strong></dt>
-  <dd>rCharts is an R package to create, customize and publish interactive JavaScript visualizations from R.</dd>
-  -->
 </dl>
-
----
-
-# [Shiny](http://www.rstudio.com/shiny/)
-<hr>
-
-- No HTML or JavaScript knowledge is necessary.
-- Modern-looking default UI theme based on [Twitter Bootstrap](http://getbootstrap.com/css/).
-- [Reactive programming](http://rstudio.github.io/shiny/tutorial/#reactivity-overview) in the browser.
-- [Showcase](http://www.rstudio.com/shiny/showcase/)
-- [Packaged deployment services](http://rstudio.github.io/shiny/tutorial/#deployment-web)
 
 ---
 
@@ -160,6 +139,7 @@ class: center, middle
 
 - d3
   - [Classic example](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html?_r=0)
+  - [CISNET example](recline/demos/mgh-demo/#load/0977e02b-6957-42a8-b430-6d5960e5b2a9)
   - [Discussed two years ago and used widely in CSNW](https://github.com/benracine/d3_cisnet_tutorial)
   - [d3 CISNET Tutorial](d3_cisnet_tutorial/tutorial_slides/d3_tutorial.pdf)
   - [d3 "expose"](d3_cisnet_tutorial/wow_slides/d3_wow_session.pdf)
@@ -208,12 +188,39 @@ class: center, middle
 
 ---
 
+# [MathJax](www.mathjax.org)
+
+<p>
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+</p>
+
+---
+
+# [Shiny](http://www.rstudio.com/shiny/)
+<hr>
+
+- No HTML or JavaScript knowledge is necessary.
+- Modern-looking default UI theme based on [Twitter Bootstrap](http://getbootstrap.com/css/).
+- [Reactive programming](http://rstudio.github.io/shiny/tutorial/#reactivity-overview) in the browser.
+- [Showcase](http://www.rstudio.com/shiny/showcase/)
+- [Packaged deployment services](http://rstudio.github.io/shiny/tutorial/#deployment-web)
+
+---
+
 # Open Floor
 <hr>
 
 - Share your screen
 - Research one of these packages
 - Build something with our remaining time?
+
+---
+
+# Parallel Computing?
+
+- [In Julia](http://docs.julialang.org/en/latest/manual/parallel-computing/#)
+- MPI 
 
 </textarea>
 
