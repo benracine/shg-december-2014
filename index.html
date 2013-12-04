@@ -96,7 +96,7 @@
 class: center, middle
 
 # Programmers Breakout Meeting
-# Some "Shiny" New Things
+# Some "Shiny" New (Open Source) Things
 
 <br>
 
@@ -107,7 +107,7 @@ class: center, middle
 
 #### Live slideshow: [bit.ly/pbo-2013](https://bit.ly/pbo-2013)
 #### Slideshow materials: [github.com/benracine/pbo-2013](https://github.com/benracine/pbo-2013)
-<span style="font-size: 14px;">*This presentation made using [Remark.js](http://remarkjs.com/#1) and MathJax </span>
+<span style="font-size: 14px;">*This presentation made using [Remark.js](http://remarkjs.com/#1) and [MathJax](http://www.mathjax.org/)</span>
 
 ---
 
@@ -145,9 +145,7 @@ class: center, middle
 <hr>
 
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Cole Johannson: powerpoint automation tool</li>
   <li></li>
 </ul>
 
@@ -158,8 +156,8 @@ class: center, middle
 
 <ul>
   <li>["Github Effect" visualization](http://youtu.be/r0ji8FDNTj0?t=4m58s): watch an example repo contributions explode (at 5:20) upon moving to Github.</li>
-  <li>DVCS: all repos are equal, set up your own topology</li>
-  <span style="font-size: 15px; padding: 20px;">Thinkpad <------> i3enhamin@Github <------> benracine@Github <-------> System76 </span>
+  <li>[DVCS](http://en.wikipedia.org/wiki/Distributed_revision_control): all repos are equal, set up your own topology</li>
+  <span style="font-size: 15px; padding: 20px;"> c:\repo1 <------> i3enhamin@Github <------> benracine@Github <-------> c:\repo2 </span>
   <li style="padding-top: 10px;">Git is a network of independent [DAGs](http://en.wikipedia.org/wiki/Directed_acyclic_graph) where the nodes are commits</li>
 </ul>
 
@@ -395,6 +393,7 @@ As the slideshow is contained in a plain HTML file, you may:
     <script type="text/javascript">
       $( document ).ready(function() {
         $('a').attr('target', '_blank');
+        $('img').attr('width', 300).attr('align', 'middle');
       });
     </script>
   </body>
