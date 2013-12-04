@@ -7,22 +7,19 @@
       @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
       @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
-      body {font-family: 'Droid Serif'; font-size: 22px; }
-      h1, h2, h3 {font-family: 'Yanone Kaffeesatz'; font-weight: 400; margin-bottom: 0; }
+      .last-list dt, .last-list dd { font-size: 20px; padding: 5px; }
+      body { font-family: 'Droid Serif'; font-size: 22px; }
+      h1, h2, h3 { font-family: 'Yanone Kaffeesatz'; font-weight: 400; margin-bottom: 0; }
       h1 { font-size: 2.5em; }
       h2 { font-size: 1.8em; }
       h3 { font-size: 1.4em; }
-      .footnote {position: absolute; bottom: 3em; }
+      .footnote { position: absolute; bottom: 3em; }
       ul { padding-bottom: 10px;}
       li { padding-bottom: 10px;}
       li p { line-height: 1.25em; }
       .red { color: #fa0000; }
       .large { font-size: 2em; }
-      a, a > code {
-        color: blue;
-        /*color: blue; rgb(249, 38, 114);*/
-        text-decoration: none;
-      }
+      a, a > code { color: blue; text-decoration: none; }
       code {
         -moz-border-radius: 5px;
         -web-border-radius: 5px;
@@ -30,19 +27,12 @@
         border-radius: 5px;
         font-size: 16px;
       }
-      .pull-left {float: left; width: 47%; }
-      .pull-right {float: right; width: 47%; }
-      .pull-right ~ p {clear: both; }
-      #slideshow .slide .content code {font-size: 0.8em; }
-      #slideshow .slide .content pre code {
-        font-size: 0.9em;
-        padding: 15px;
-      }
-      .inverse {
-        background: #272822;
-        color: #777872;
-        text-shadow: 0 0 20px #333;
-      }
+      .pull-left { float: left; width: 47%; }
+      .pull-right { float: right; width: 47%; }
+      .pull-right ~ p { clear: both; }
+      #slideshow .slide .content code { font-size: 0.8em; }
+      #slideshow .slide .content pre code { font-size: 0.9em; padding: 15px; }
+      .inverse { background: #272822; color: #777872; text-shadow: 0 0 20px #333; }
       .inverse h1, .inverse h2 {
         color: #f3f3f3;
         line-height: 0.8em;
@@ -88,6 +78,8 @@
       }
       .left-column h2:last-of-type, .left-column h3:last-child {color: #000; }
       .right-column {width: 75%; float: right; padding-top: 2em; }
+      dd { padding: 0px; }
+      dt { padding: 0px; }
     </style>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -109,13 +101,13 @@ class: center, middle
 <br>
 
 ## Ben Racine
-## December 2013 
+## December 2013 Annual Meeting
 
 <br>
 
 #### Live slideshow: [bit.ly/pbo-2013](https://bit.ly/pbo-2013)
 #### Slideshow materials: [github.com/benracine/pbo-2013](https://github.com/benracine/pbo-2013)
-<span style="font-size: 14px;">*Presentation made using [Remark.js](http://remarkjs.com/#1) and MathJax </span>
+<span style="font-size: 14px;">*This presentation made using [Remark.js](http://remarkjs.com/#1) and MathJax </span>
 
 ---
 
@@ -123,17 +115,115 @@ class: center, middle
 <hr>
 
 <dl>
-  <dt><strong><h2>[d3](http://d3js.org/) / [Vega](https://github.com/trifacta/vega/wiki)</h2></strong></dt>
-  <dd style="font-size: 16px;">d3 is a JavaScript library for manipulating documents based on data. Vega is a visualization grammar; a declarative format for creating, saving, and sharing visualization designs.</dd>
-  <dt><strong><h2>[Julia](http://julialang.org/)</h2></strong></dt>
-  <dd style="font-size: 16px;">Julia is a very young programming language with a Matlab-like syntax, some Lispy features, and performance approaching that of C/Fortran.</dd>
-  <dt><strong><h2>[MathJax](http://www.mathjax.org/)</h2></strong></dt>
-  <dd style="font-size: 16px;">Brings *LaTeX* to the browser.</dd>
-  <dt><strong><h2>[Shiny](http://www.rstudio.com/shiny/)</h2></strong></dt>
-  <dd style="font-size: 16px;">Helps R users to turn analyses into interactive web applications.</dd>
-  <dt><strong><h2>[Open Floor]()</h2></strong></dt>
+  <dt style="font-size: 16px; padding: 0px;"><strong><h2>[Open Floor]()</h2></strong></dt>
+  <dt style="font-size: 16px; padding: 0px;"><strong><h2>[Git Demo]()</h2></strong></dt>
+  <dt style="font-size: 16px; padding: 0px;"><strong><h2>[Julia](http://julialang.org/)</h2></strong></dt>
+  <dd style="font-size: 16px; padding: 0px;">Julia is a very young programming language with a Matlab-like syntax, some Lispy features, and performance approaching that of C/Fortran.</dd>
+  <dt style="font-size: 16px; padding: 0px;"><strong><h2>[d3](http://d3js.org/) / [Vega](https://github.com/trifacta/vega/wiki)</h2></strong></dt>
+  <dd style="font-size: 16px; padding: 0px;">d3 is a JavaScript library for manipulating documents based on data. Vega is a visualization grammar; a declarative format for creating, saving, and sharing visualization designs.</dd>
+  <dt style="font-size: 16px; padding: 0px;"><strong><h2>[MathJax](http://www.mathjax.org/)</h2></strong></dt>
+  <dd style="font-size: 16px; padding: 0px;">Brings *LaTeX* to the browser.</dd>
+  <dt style="font-size: 16px; padding: 0px;"><strong><h2>[Shiny](http://www.rstudio.com/shiny/)</h2></strong></dt>
+  <dd style="font-size: 16px; padding: 0px;">Helps R users to turn analyses into interactive web applications.</dd>
 </dl>
 
+---
+
+# Open Floor
+<hr>
+
+<ul>
+  <li style="padding-bottom: 10px; font-size: 22px;">Open invitation to share?</li>
+  <small style="font-size: 14px;"> I can throw some links/notes into this presentation</small>
+  <li style="padding-bottom: 10px; font-size: 22px; padding-top: 15px;">Git demo?</li>
+  <small style="font-size: 14px;">Thought it would make a good precursor given that the remaining tools are located there.</small>
+</ul>
+
+---
+
+# Any Notes from Audience Contributions
+<hr>
+
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+---
+
+# Git/Github
+<hr>
+
+<ul>
+  <li>["Github Effect" visualization](http://youtu.be/r0ji8FDNTj0?t=4m58s): watch an example repo contributions explode (at 5:20) upon moving to Github.</li>
+  <li>DVCS: all repos are equal, set up your own topology</li>
+  <span style="font-size: 15px; padding: 20px;">Thinkpad <------> i3enhamin@Github <------> benracine@Github <-------> System76 </span>
+  <li style="padding-top: 10px;">Git is a network of independent [DAGs](http://en.wikipedia.org/wiki/Directed_acyclic_graph) where the nodes are commits</li>
+</ul>
+
+![Default-aligned image](http://i.stack.imgur.com/tEzfm.png)
+  
+---
+
+# Git/Github
+
+### Definitions
+
+<ul>
+  <li style="font-size: 15px;"><strong>Repo</strong>: the whole DAG</li>
+  <li style="font-size: 15px;"><strong>Branch</strong>: a sequence of connected commits: branch name refers to the tip.</li>
+  <li style="font-size: 15px;"><strong>Fork</strong>: An overloaded term: both a Github term for cloning someone else's whole Github-hosted repo/DAG AND creating a new local branch.</li>
+  <li style="font-size: 15px;"><strong>Pull request</strong>: a formal request to merge a branch, either within a Github repo or across Github repos.</li>
+  <li style="font-size: 15px;"><strong>Merge</strong>: bring in the changes that occured on a different branch.</li>
+  <li style="font-size: 15px;"><strong>Push/pull</strong>: receive/send commits from one repo to another.</li>
+</ul>
+
+---
+
+# [Julia](http://julialang.org/)
+<hr>
+
+- [Performance comparable to Fortran and C](http://julialang.org/benchmarks/)
+- One language for both programmer productivity and CPU efficiency 
+- No CRAN, but admirable [package evolution on Github](http://docs.julialang.org/en/latest/packages/packagelist/) nevertheless
+- Lisp-like [macros](http://docs.julialang.org/en/latest/manual/metaprogramming/) and [multiple dispatch](http://nbviewer.ipython.org/gist/StefanKarpinski/b8fe9dbb36c1427b9f22)
+
+---
+
+# [Julia](http://julialang.org/)
+
+<hr>
+
+- [Standard Library](http://docs.julialang.org/en/latest/stdlib/)
+- Libraries
+  - [JuliaStats](https://github.com/JuliaStats)
+  - [Functional collections](https://github.com/zachallaun/FunctionalCollections.jl) and [functional utilities](https://github.com/zachallaun/FunctionalUtils.jl)
+  - [Plotting options discussed](https://groups.google.com/forum/#!topic/julia-users/4pT81kO1jDE)
+  - [Julia package that targets **Vega**](https://github.com/johnmyleswhite/Vega.jl)
+
+---
+
+# [Julia](http://julialang.org/)
+
+<hr>
+
+### Code Example
+
+```
+function mandel(z)
+    c = z
+    maxiter = 80
+    for n = 1:maxiter
+        if abs(z) > 2
+            return n-1
+        end
+        z = z^2 + c
+    end
+    return maxiter
+end
+```
 ---
 
 # [d3](http://d3js.org)
@@ -146,6 +236,7 @@ class: center, middle
   <li style="padding: 20px;">[CISNET example](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/recline/demos/mgh-demo/index.html#load/21894b1b-2bc6-44f6-85a8-e047cb73f136)</li>
   <li style="padding: 20px;">[Prolific list of examples](https://github.com/mbostock/d3/wiki/Gallery) has **exploded** since last presenting on d3</li>
   <li style="padding: 20px;">[APC Viewer?](http://charts.animateddata.co.uk/uktemperaturelines/)</li>
+  <li style="padding: 20px;">[Life Histories](http://visualizing.org/full-screen/173546)</li>
 </ul>
 
 ---
@@ -179,9 +270,9 @@ class: center, middle
 <hr>
 
 <ul>
-<li style="font-size: 20px; padding: 10px;">[Bar Chart Tutorial](https://github.com/trifacta/vega/wiki/Tutorial)</li>
-<li style="font-size: 20px; padding: 10px;">[Examples Embedded in an Editor](http://trifacta.github.io/vega/editor/)</li>
-<li style="font-size: 12px; padding: 10px;">Additional Examples ([Interact](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/interact/index.html), [Dynamic](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/dynamic/index.html), [Jobs](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/jobs/index.html))</li>
+<li style="padding: 10px;">[Bar Chart Tutorial](https://github.com/trifacta/vega/wiki/Tutorial)</li>
+<li style="padding: 10px;">[Examples Embedded in an Editor](http://trifacta.github.io/vega/editor/)</li>
+<li style="padding: 10px;">Additional Examples ([Interact](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/interact/index.html), [Dynamic](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/dynamic/index.html), [Jobs](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/jobs/index.html))</li>
 </ul>
 
 ---
@@ -196,26 +287,16 @@ class: center, middle
 
 ---
 
-# [Julia](http://julialang.org/)
+# Additional d3 plotting libraries
 <hr>
 
-- [Performance comparable to Fortran and C](http://julialang.org/benchmarks/)
-- One language for both programmer productivy and CPU efficiency 
-- No CRAN, but admirable [package evolution on Github](http://docs.julialang.org/en/latest/packages/packagelist/) nevertheless
-- Lisp-like [macros](http://docs.julialang.org/en/latest/manual/metaprogramming/) and [multiple dispatch](http://nbviewer.ipython.org/gist/StefanKarpinski/b8fe9dbb36c1427b9f22)
-
----
-
-# [Julia](http://julialang.org/)
-
-<hr>
-
-- [Standard Library](http://docs.julialang.org/en/latest/stdlib/)
-- Libraries
-  - [JuliaStats](https://github.com/JuliaStats)
-  - [Functional collections](https://github.com/zachallaun/FunctionalCollections.jl) and [functional utilities](https://github.com/zachallaun/FunctionalUtils.jl)
-  - [Plotting options discussed](https://groups.google.com/forum/#!topic/julia-users/4pT81kO1jDE)
-  - [Julia package that targets **Vega**](https://github.com/johnmyleswhite/Vega.jl)
+<ul>
+<li style="font-size: 20px; padding: 10px;">[c3.js](http://c3js.org/)
+<li style="font-size: 20px; padding: 10px;">[nvd3](http://nvd3.org/)
+<li style="font-size: 20px; padding: 10px;">[dimple](http://dimplejs.org/)
+<li style="font-size: 20px; padding: 10px;">[d3.chart](http://misoproject.com/d3-chart/)
+<li style="font-size: 20px; padding: 10px;">[Rickshaw](http://code.shutterstock.com/rickshaw/)
+</ul>
 
 ---
 
@@ -225,8 +306,6 @@ class: center, middle
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 </p>
-
-- Works nicely with 
 
 ---
 
@@ -274,40 +353,35 @@ That should all play nicely with Shiny.
 
 ## [ggplot2]()
 
+- What I plan to explore during the hack session.
 
 ---
 
-# [R Plotting Tools]()
-That should all play nicely with Shiny.
-<hr>
-
-## [yet another]()
-
----
-
-# Open Floor
-<hr>
-
-- Open invitation to share 
-- Any open time to hack, explore, and share in the last 20 mins
-
----
-
-# Remark.js
+# [Remark.js](http://remarkjs.com/)
 <hr>
 
 As the slideshow is contained in a plain HTML file, you may:
 
-- Easily collaborate with others using distributed version control.
-- Easily host from Dropbox or Github pages.
-
+- Collaborate with others with version control.
+- Host from Dropbox, Github pages, etc.
 
 [Simple Boilerplate example](https://github.com/gnab/remark)
 
 <dl>
   <dt>[Markdown syntax](http://daringfireball.net/projects/markdown/)</dt>
-  <dd>Markdown helps keep this presentation at just over 100 lines.</dd>
+  <dd>Markdown helps keep this presentation at about 200 lines.</dd>
 </dl>
+
+---
+
+# Even more tools
+<hr>
+
+<ul>
+  <li style="font-size: 20px; padding: 20px;">[Tangle](http://worrydream.com/Tangle/) is a JavaScript library for creating reactive documents. Your readers can interactively explore possibilities, play with parameters, and see the document update immediately.</li>
+  <li style="font-size: 20px; padding: 20px;">[explainshell.com](http://explainshell.com/)</li>
+  <li>[List of Visualization Tools](http://www.computerworld.com/s/article/9214755/Chart_and_image_gallery_30_free_tools_for_data_visualization_and_analysis?taxonomyId=9&pageNumber=1)</li>
+</ul>
 
 
 </textarea>
