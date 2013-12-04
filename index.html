@@ -7,12 +7,14 @@
       @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
       @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
-      body {font-family: 'Droid Serif'; font-size: 20px; }
+      body {font-family: 'Droid Serif'; font-size: 22px; }
       h1, h2, h3 {font-family: 'Yanone Kaffeesatz'; font-weight: 400; margin-bottom: 0; }
       h1 { font-size: 2.5em; }
       h2 { font-size: 1.8em; }
       h3 { font-size: 1.4em; }
       .footnote {position: absolute; bottom: 3em; }
+      ul { padding-bottom: 10px;}
+      li { padding-bottom: 10px;}
       li p { line-height: 1.25em; }
       .red { color: #fa0000; }
       .large { font-size: 2em; }
@@ -110,11 +112,10 @@ class: center, middle
 ## December 2013 
 
 <br>
-<br>
 
-#### Slideshow: [bit.ly/pbo-2013](bit.ly/pbo-2013)
-#### Repo: https://github.com/benracine/pbo-2013
-#### *Presentation made using Remark.js and MathJax
+#### Live slideshow: [bit.ly/pbo-2013](https://bit.ly/pbo-2013)
+#### Slideshow materials: [github.com/benracine/pbo-2013](https://github.com/benracine/pbo-2013)
+<span style="font-size: 14px;">*Presentation made using [Remark.js](http://remarkjs.com/#1) and MathJax </span>
 
 ---
 
@@ -123,41 +124,75 @@ class: center, middle
 
 <dl>
   <dt><strong><h2>[d3](http://d3js.org/) / [Vega](https://github.com/trifacta/vega/wiki)</h2></strong></dt>
-  <dd>d3 is a JavaScript library for manipulating documents based on data. Vega is a *visualization grammar*; a declarative format for creating, saving, and sharing visualization designs.</dd>
+  <dd style="font-size: 16px;">d3 is a JavaScript library for manipulating documents based on data. Vega is a visualization grammar; a declarative format for creating, saving, and sharing visualization designs.</dd>
   <dt><strong><h2>[Julia](http://julialang.org/)</h2></strong></dt>
-  <dd>Julia is an entirely new programming language that aims to pair programmer productivity with CPU efficiency.</dd>
+  <dd style="font-size: 16px;">Julia is a very young programming language with a Matlab-like syntax, some Lispy features, and performance approaching that of C/Fortran.</dd>
   <dt><strong><h2>[MathJax](http://www.mathjax.org/)</h2></strong></dt>
-  <dd>Latex in the browser.</dd>
+  <dd style="font-size: 16px;">Brings *LaTeX* to the browser.</dd>
   <dt><strong><h2>[Shiny](http://www.rstudio.com/shiny/)</h2></strong></dt>
-  <dd>Helps R users to turn analyses into interactive web applications.</dd>
+  <dd style="font-size: 16px;">Helps R users to turn analyses into interactive web applications.</dd>
+  <dt><strong><h2>[Open Floor]()</h2></strong></dt>
 </dl>
 
 ---
 
-# [d3](http://d3js.org) / [Vega](https://github.com/trifacta/vega/wiki)
+# [d3](http://d3js.org)
 <hr>
 
-- d3
-  - [Discussed two years ago and used widely in CSNW](https://github.com/benracine/d3_cisnet_tutorial)
-  - [d3 CISNET Tutorial](d3_cisnet_tutorial/tutorial_slides/d3_tutorial.pdf)
-  - [d3 "expose"](d3_cisnet_tutorial/wow_slides/d3_wow_session.pdf)
-  - [Popular example in media](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html?_r=0)
-  - [CISNET example](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/recline/demos/mgh-demo/index.html)
+<ul>
+  <li style="padding: 20px;">[Discussed two years ago](https://github.com/benracine/d3_cisnet_tutorial) and used widely in CSNW</li>
+  <li style="padding: 20px;">[d3 CISNET Tutorial](d3_cisnet_tutorial/tutorial_slides/d3_tutorial.pdf)</li>
+  <li style="padding: 20px;">[d3 "expose"](d3_cisnet_tutorial/wow_slides/d3_wow_session.pdf)</li>
+  <li style="padding: 20px;">[CISNET example](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/recline/demos/mgh-demo/index.html#load/21894b1b-2bc6-44f6-85a8-e047cb73f136)</li>
+  <li style="padding: 20px;">[Prolific list of examples](https://github.com/mbostock/d3/wiki/Gallery) has **exploded** since last presenting on d3</li>
+  <li style="padding: 20px;">[APC Viewer?](http://charts.animateddata.co.uk/uktemperaturelines/)</li>
+</ul>
 
 ---
 
-# [d3](http://d3js.org) / [Vega](https://github.com/trifacta/vega/wiki)
+# [Vega](https://github.com/trifacta/vega/wiki)
 <hr>
 
-- Vega
-  - [On the relationship with d3](https://github.com/trifacta/vega/wiki/Vega-and-D3)
+<br>
+[On the relationship with d3](https://github.com/trifacta/vega/wiki/Vega-and-D3):
+<br>
+<br>
 
 > Vega provides a higher-level visualization specification language on top of d3. 
 > By design, d3 will maintain an "expressivity advantage" and in many cases will be better suited for novel, highly interactive graphics. 
-> On the other hand, we hope that Vega will be convenient for a wide range of common yet customizable visualizations.
+> On the other hand, we hope that Vega will be convenient for a wide range of [common yet customizable visualizations](http://trifacta.github.io/vega/editor/).
 
-  - [Tutorial](https://github.com/trifacta/vega/wiki/Tutorial)
-  - Examples ([Interact](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/interact/index.html), [Dynamic](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/dynamic/index.html), [Jobs](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/jobs/index.html))
+---
+
+# [Vega](https://github.com/trifacta/vega/wiki)
+<hr>
+
+<ul>
+  <li style="padding: 20px;">Vega provides a [JSON](http://www.json.org/) file-format for saving and sharing visualization designs.</li>
+  <li style="padding: 20px;">Or a "target language" in which computer programs can dynamically generate visualizations. A program can construct a Vega specification (which is simply a JSON object) and then pass it off to the Vega [runtime](https://github.com/trifacta/vega/wiki/Runtime) to visualize data.</li>
+  <li style="padding: 20px;">By using an internal scenegraph (rather than the DOM), Vega can render visualizations using either HTML5 Canvas or SVG (and perhaps others).</li>
+</ul>
+
+---
+
+# [Vega](https://github.com/trifacta/vega/wiki)
+<hr>
+
+<ul>
+<li style="font-size: 20px; padding: 10px;">[Bar Chart Tutorial](https://github.com/trifacta/vega/wiki/Tutorial)</li>
+<li style="font-size: 20px; padding: 10px;">[Examples Embedded in an Editor](http://trifacta.github.io/vega/editor/)</li>
+<li style="font-size: 12px; padding: 10px;">Additional Examples ([Interact](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/interact/index.html), [Dynamic](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/dynamic/index.html), [Jobs](http://dl.dropboxusercontent.com/u/12371285/cisnet-december-2013/vega/examples/jobs/index.html))</li>
+</ul>
+
+---
+
+# [Vega](https://github.com/trifacta/vega/wiki)
+<hr>
+
+<ul>
+  <li style="padding: 20px;">["Marks"](https://github.com/trifacta/vega/wiki/Marks) support a wide variety of chart types, without the artificial restrictions of monolithic chart widgets.</li>
+  <li style="padding: 20px;">Other, existing grammars (Wilkinson's Grammar of Graphics, Wickham's ggplot2 and Tableau's VizQL) focus on rapid generation of charts to support analysis. However, in service of rapid specification these systems make a number of decisions on behalf of the user, and also impose limits on the type of visualizations one can create. Vega is intended to be lower-level, enabling fine-gained control of the visualization design.</li>
+</ul>
 
 ---
 
@@ -172,23 +207,15 @@ class: center, middle
 ---
 
 # [Julia](http://julialang.org/)
+
 <hr>
 
 - [Standard Library](http://docs.julialang.org/en/latest/stdlib/)
 - Libraries
   - [JuliaStats](https://github.com/JuliaStats)
-  - [Functional Collections](https://github.com/zachallaun/FunctionalCollections.jl)
-  - [Functional Utilities](https://github.com/zachallaun/FunctionalUtils.jl)
-  - [Julia package that targets Vega](https://github.com/johnmyleswhite/Vega.jl)
+  - [Functional collections](https://github.com/zachallaun/FunctionalCollections.jl) and [functional utilities](https://github.com/zachallaun/FunctionalUtils.jl)
   - [Plotting options discussed](https://groups.google.com/forum/#!topic/julia-users/4pT81kO1jDE)
-
----
-
-# [R Plotting Tools]()
-<hr>
-
-- [ggplot2](http://docs.ggplot2.org/current/)
-- [rVega](https://github.com/metagraf/rVega)
+  - [Julia package that targets **Vega**](https://github.com/johnmyleswhite/Vega.jl)
 
 ---
 
@@ -199,32 +226,89 @@ When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 </p>
 
+- Works nicely with 
+
 ---
 
 # [Shiny](http://www.rstudio.com/shiny/)
+
 <hr>
 
 - No HTML or JavaScript knowledge is necessary.
 - Modern-looking default UI theme based on [Twitter Bootstrap](http://getbootstrap.com/css/).
 - [Reactive programming](http://rstudio.github.io/shiny/tutorial/#reactivity-overview) in the browser.
-- [Showcase](http://www.rstudio.com/shiny/showcase/)
-- [Packaged deployment services](http://rstudio.github.io/shiny/tutorial/#deployment-web)
+- [Showcase](http://www.rstudio.com/shiny/showcase/).
+- [Packaged deployment services](http://rstudio.github.io/shiny/tutorial/#deployment-web).
+
+---
+
+# [R Plotting Tools]()
+That should all play nicely with Shiny.
+<hr>
+
+### [rVega](https://github.com/metagraf/rVega) - [Simple Example](http://glimmer.rstudio.com/reinholdsson/rVega-demo-1/)
+
+**server.R**
+```javascript
+library(rVega)
+  shinyServer(function(input, output) {
+    output$plot <- renderVega({
+      treemap(1:26, letters)
+  })
+})
+```
+
+**ui.R**
+```javascript
+library(rVega)
+shinyUI(bootstrapPage(
+    vegaOutput("plot")
+))
+```
+
+---
+
+# [R Plotting Tools]()
+That should all play nicely with Shiny.
+<hr>
+
+## [ggplot2]()
+
+
+---
+
+# [R Plotting Tools]()
+That should all play nicely with Shiny.
+<hr>
+
+## [yet another]()
 
 ---
 
 # Open Floor
 <hr>
 
-- Share your screen
-- Research one of these packages
-- Build something with our remaining time?
+- Open invitation to share 
+- Any open time to hack, explore, and share in the last 20 mins
 
 ---
 
-# Parallel Computing?
+# Remark.js
+<hr>
 
-- [In Julia](http://docs.julialang.org/en/latest/manual/parallel-computing/#)
-- MPI 
+As the slideshow is contained in a plain HTML file, you may:
+
+- Easily collaborate with others using distributed version control.
+- Easily host from Dropbox or Github pages.
+
+
+[Simple Boilerplate example](https://github.com/gnab/remark)
+
+<dl>
+  <dt>[Markdown syntax](http://daringfireball.net/projects/markdown/)</dt>
+  <dd>Markdown helps keep this presentation at just over 100 lines.</dd>
+</dl>
+
 
 </textarea>
 
