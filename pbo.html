@@ -87,14 +87,6 @@
       .left-column h2:last-of-type, .left-column h3:last-child {color: #000; }
       .right-column {width: 75%; float: right; padding-top: 2em; }
     </style>
-    <!--
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-      });
-    </script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    -->
   </head>
   <body>
 
@@ -103,126 +95,43 @@
 
 class: center, middle
 
-# Programmers Breakout Meeting
-# Some "Shiny" New Things
+# SHG v6.3.1
 
 <br>
 
-## Ben Racine
-## December 2013 
+## Lauren Clarke and Ben Racine
+## December 2014 
 
 <br>
 <br>
 
 #### Slideshow: http://benracine.github.io/pbo-2013
 #### Repo: https://github.com/benracine/pbo-2013
-#### *Presentation made using Remark.js and MathJax
 
 ---
 
-### Agenda
+# Differences between JNCI SHG and latest SHG
 <hr>
 
-<dl>
-  <dt><strong><h2>[d3](http://d3js.org/) / [Vega](https://github.com/trifacta/vega/wiki)</h2></strong></dt>
-  <dd>d3 is a JavaScript library for manipulating documents based on data. Vega is a *visualization grammar*; a declarative format for creating, saving, and sharing visualization designs.</dd>
-  <dt><strong><h2>[Julia](http://julialang.org/)</h2></strong></dt>
-  <dd>Julia is an entirely new programming language that aims to pair programmer productivity with CPU efficiency.</dd>
-  <dt><strong><h2>[MathJax](http://www.mathjax.org/)</h2></strong></dt>
-  <dd>Latex in the browser.</dd>
-  <dt><strong><h2>[Shiny](http://www.rstudio.com/shiny/)</h2></strong></dt>
-  <dd>Helps R users to turn analyses into interactive web applications.</dd>
-</dl>
+- Updated NHIS input data (now we go all the way to 2012). This will have impact not only for the newer cohorts, but also for older cohorts since we'll have more data from them. We added 12 surveys, and a lot of data on initiation and cessation.
+- Updated initiation/cessation/prevalence methodology. Ted improved the Anderson et al methodology and extended it to integrate all the different pieces in a single framework (please correct me if wrong, Ted). He also embedded it in APC models (making it more robust). Projected cessation for older ages also changed (I remember this change during the screening work).
+- SHG goes now to age 100. Before we stopped at 90 (or 85)
+- Updated CPD categories. We went from quintiles, to 6 categories that better represent the data and deal with the data heaping issues. 
 
 ---
 
-# [d3](http://d3js.org) / [Vega](https://github.com/trifacta/vega/wiki)
+# Differences between JNCI SHG and latest SHG
 <hr>
 
-- d3
-  - [Classic example](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html?_r=0)
-  - [CISNET example](recline/demos/mgh-demo/#load/0977e02b-6957-42a8-b430-6d5960e5b2a9)
-  - [Discussed two years ago and used widely in CSNW](https://github.com/benracine/d3_cisnet_tutorial)
-  - [d3 CISNET Tutorial](d3_cisnet_tutorial/tutorial_slides/d3_tutorial.pdf)
-  - [d3 "expose"](d3_cisnet_tutorial/wow_slides/d3_wow_session.pdf)
+- OCM mortality rates. We moved from older Berkely life tables to HMD tables. This should not make much difference prior to the calendar year of 1995, but these do differ from 1995-2000 (HMD are based on observed data, Berkely's were projections). We also fixed some issues with the SAS code (eg., made sure former smokers death rates are lower than current smokers)
+- Updated CPD switching algorithm. Ben and Lauren updated the algorithm that assigns the CPDs per age. 
+- Updated software. Went from IMS implementation to Cornerstone implementation (ownership of the code).
 
-- Vega
-  - [On the relationship with d3](https://github.com/trifacta/vega/wiki/Vega-and-D3)
+--- 
 
-> Vega provides a higher-level visualization specification language on top of d3. 
-> By design, d3 will maintain an "expressivity advantage" and in many cases will be better suited for novel, highly interactive graphics. 
-> On the other hand, we hope that Vega will be convenient for a wide range of common yet customizable visualizations.
+# Recline.js results from v6.3.1
 
-  - [Tutorial](https://github.com/trifacta/vega/wiki/Tutorial)
-  - [Examples](vega/examples/)
 
----
-
-# [Julia](http://julialang.org/)
-<hr>
-
-- [Performance comparable to Fortran and C](http://julialang.org/benchmarks/)
-- One language for both programmer productivy and CPU efficiency 
-- No CRAN, but admirable [package evolution on Github](http://docs.julialang.org/en/latest/packages/packagelist/) nevertheless
-- [Lisp-like macros](http://docs.julialang.org/en/latest/manual/metaprogramming/)
-- Designed around [Lisp-like multiple dispatch](http://nbviewer.ipython.org/gist/StefanKarpinski/b8fe9dbb36c1427b9f22)
-
----
-
-# [Julia](http://julialang.org/)
-<hr>
-
-- [Standard Library](http://docs.julialang.org/en/latest/stdlib/)
-- Libraries
-  - [JuliaStats](https://github.com/JuliaStats)
-  - [Functional Collections](https://github.com/zachallaun/FunctionalCollections.jl)
-  - [Functional Utilities](https://github.com/zachallaun/FunctionalUtils.jl)
-  - [Julia package that targets Vega](https://github.com/johnmyleswhite/Vega.jl)
-  - [Plotting options discussed](https://groups.google.com/forum/#!topic/julia-users/4pT81kO1jDE)
-
----
-
-# [R Plotting Tools]()
-<hr>
-
-- [ggplot2](http://docs.ggplot2.org/current/)
-- [rVega](https://github.com/metagraf/rVega)
-
----
-
-# [MathJax](www.mathjax.org)
-
-<p>
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-</p>
-
----
-
-# [Shiny](http://www.rstudio.com/shiny/)
-<hr>
-
-- No HTML or JavaScript knowledge is necessary.
-- Modern-looking default UI theme based on [Twitter Bootstrap](http://getbootstrap.com/css/).
-- [Reactive programming](http://rstudio.github.io/shiny/tutorial/#reactivity-overview) in the browser.
-- [Showcase](http://www.rstudio.com/shiny/showcase/)
-- [Packaged deployment services](http://rstudio.github.io/shiny/tutorial/#deployment-web)
-
----
-
-# Open Floor
-<hr>
-
-- Share your screen
-- Research one of these packages
-- Build something with our remaining time?
-
----
-
-# Parallel Computing?
-
-- [In Julia](http://docs.julialang.org/en/latest/manual/parallel-computing/#)
-- MPI 
 
 </textarea>
 
